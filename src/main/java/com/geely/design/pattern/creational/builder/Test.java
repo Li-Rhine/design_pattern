@@ -1,5 +1,7 @@
 package com.geely.design.pattern.creational.builder;
 
+import jdk.nashorn.internal.ir.annotations.Immutable;
+
 public class Test {
     public static void main(String[] args) {
         CourseBuilder courseBuilder = new CourseActualBuilder();
@@ -12,5 +14,7 @@ public class Test {
                 "Java设计模式精讲手记",
                 "Java设计模式精讲问答");
         System.out.println(course);
+
+        //StringBuilder、ImmutableSet使用建造者模式
     }
 }
