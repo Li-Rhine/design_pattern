@@ -1,7 +1,5 @@
 package com.geely.design.pattern.creational.builder;
 
-import jdk.nashorn.internal.ir.annotations.Immutable;
-
 public class Test {
     public static void main(String[] args) {
         CourseBuilder courseBuilder = new CourseActualBuilder();
