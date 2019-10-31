@@ -1,6 +1,6 @@
 package com.geely.design.pattern.creational.prototype;
 
-public class Mail {
+public class Mail implements Cloneable {
     private String name;
     private String emailAddress;
     private String content;
@@ -40,6 +40,12 @@ public class Mail {
                 "name='" + name + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", content='" + content + '\'' +
-                '}';
+                '}' + super.toString();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        System.out.println("clone mail object");
+        return super.clone();
     }
 }

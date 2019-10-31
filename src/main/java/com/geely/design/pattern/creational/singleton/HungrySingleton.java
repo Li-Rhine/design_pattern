@@ -23,4 +23,9 @@ public class HungrySingleton implements Serializable {
     private Object readResolve(){
         return hungrySingleton;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
