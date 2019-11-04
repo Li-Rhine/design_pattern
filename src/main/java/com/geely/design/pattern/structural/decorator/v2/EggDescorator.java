@@ -11,6 +11,11 @@ public class EggDescorator extends AbstractDecorator {
     }
 
     @Override
+    protected void doSomething() {
+
+    }
+
+    @Override
     protected String getDesc() {
         return super.getDesc() + "加一个鸡蛋";
     }

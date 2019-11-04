@@ -13,6 +13,6 @@ public class Test {
         aBattercake = new EggDescorator(aBattercake);
         aBattercake = new SausageDecorator(aBattercake);
 
-        System.out.println(battercake.getDesc() + " 销售价格：" + battercake.cost());
+        System.out.println(aBattercake.getDesc() + " 销售价格：" + aBattercake.cost());
     }
 }

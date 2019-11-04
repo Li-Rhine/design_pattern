@@ -10,6 +10,10 @@ public class SausageDecorator extends AbstractDecorator{
         super(aBattercake);
     }
 
+    protected void doSomething() {
+
+    }
+
     @Override
     protected String getDesc() {
         return super.getDesc() + "加一根香肠";
