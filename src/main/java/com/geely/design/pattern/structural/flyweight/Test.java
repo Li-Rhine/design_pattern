@@ -12,7 +12,8 @@ public class Test {
 //        }
 
 
-        //测试Integer享元模式，内部有缓存，如果超过范围就new对象，用 ==判断会false
+        // 测试Integer享元模式，内部有缓存，如果超过范围就new对象，用 ==判断会false
+        // Integer、Long类型都存在缓存，为 -128~127
         Integer a = Integer.valueOf(100);
         Integer b = 100;
         Integer e = new Integer(100);
