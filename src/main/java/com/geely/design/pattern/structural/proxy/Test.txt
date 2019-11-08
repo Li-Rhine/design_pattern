@@ -15,3 +15,8 @@ Spring代理选择
     当Bean没有实现接口时，Spring使用CGLib
 
 JDK动态代理速度比CGLib快20%
+
+
+
+
+增强
